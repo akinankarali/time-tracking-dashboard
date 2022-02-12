@@ -3,7 +3,7 @@ import Button from './Button';
 import '../styles/variables.css';
 import '../styles/components/card.css';
 
-function Card({ title, backgroundColor = "blue", textColor = "white", onClick }) {
+function Card({ title, backgroundColor = "blue", textColor = "white", onClick, profilePic }) {
     const style = {
         color: textColor,
         fontFamily: '"Rubik", sans-serif',
@@ -17,7 +17,7 @@ function Card({ title, backgroundColor = "blue", textColor = "white", onClick })
         <div className='card'>
             <div className="user_info">
                 <div className="user_info__avatar">
-                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="avatar" />
+                    <img src={profilePic} alt="avatar" />
                 </div>
                 <div className="user_info__name">
                     <span>Report for</span>
