@@ -14,4 +14,5 @@ Default.args = {
   current: 32,
   previous: 36,
   image: 'https://via.placeholder.com/79',
+  backgroundColor: 'var(--limeGreen)',
 };
