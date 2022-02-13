@@ -8,7 +8,7 @@ function Card({ title, backgroundColor = "blue", textColor = "white", onClick, p
         color: textColor,
         fontFamily: '"Rubik", sans-serif',
         fontWeight: 300,
-        fontSize: "2rem",
+        fontSize: "3rem",
         columns: 2,
         marginTop: "0.25rem",
 

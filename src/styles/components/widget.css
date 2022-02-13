@@ -1,9 +1,9 @@
 @import '../variables.css';
 
 .widget {
-    width: 16rem;
+    width: 18rem;
     color: white;
-    position: absolute;
+    margin-top: -2rem;
 }
 .title {
     display: flex;
@@ -20,7 +20,7 @@
     background-color: var(--lightRedWork);
     border-radius: 1rem;
     position: relative;
-    top: 3rem;
+    top: 2rem;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -29,6 +29,8 @@
 
 .icon-part img {
     padding-right: 1.5rem;
+    width: 64px;
+    height: 64px;
 }
 
 .title img {
@@ -51,7 +53,7 @@
 }
 
 .previous p {
-    font-size: .7rem;
+    font-size: 1rem;
     margin: 0;
     font-family: 'Rubik', sans-serif;
     color: var(--paleBlue);
