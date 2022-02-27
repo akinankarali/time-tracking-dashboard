@@ -9,6 +9,39 @@
     background-color: var(--darkBlue);
     border-radius: 1rem;
 }
+@media (min-width: 576px) and (max-width: 1139.98px) { 
+    .card {
+        margin-top: 25rem !important;
+        max-width: 38rem !important;
+    }
+    .user_info {
+        display: flex;
+    }
+    .user_info__avatar {
+        padding-right: 3rem;
+        margin-top: 2rem;
+    }
+    .user_info__name {
+        display: flex;
+        align-items: center;
+    }
+    .user_info__name span {
+        padding-right: 3rem;
+    }
+    .user_info__name h2 {
+        padding-left: 1rem;
+    }
+    .times {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center;
+        padding: 2rem !important;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
 
 .user_info {
     background-color: var(--blue);
