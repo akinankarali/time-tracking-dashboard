@@ -11,8 +11,5 @@ const Template = args => <Widget {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   title: 'Work',
-  current: 32,
-  previous: 36,
-  image: 'https://via.placeholder.com/79',
   backgroundColor: 'var(--limeGreen)',
 };

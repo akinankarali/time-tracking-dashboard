@@ -1,9 +1,13 @@
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
 import Button from './Button';
+import { ButtonContext } from '../contexts/ButtonClickContext';
 import '../styles/variables.css';
 import '../styles/components/card.css';
 
-function Card({ title, backgroundColor = "blue", textColor = "white", onClick, profilePic }) {
+function Card({ title, textColor = "white", profilePic }) {
+
+    const buttonContext = useContext(ButtonContext);
+
     const style = {
         color: textColor,
         fontFamily: '"Rubik", sans-serif',
@@ -11,8 +15,12 @@ function Card({ title, backgroundColor = "blue", textColor = "white", onClick, p
         fontSize: "3rem",
         columns: 2,
         marginTop: "0.25rem",
+        width: "12rem",
 
     }
+
+    const ButtonTitles = ['Daily', 'Weekly', 'Monthly'];
+
     return (
         <div className='card'>
             <div className="user_info">
@@ -25,9 +33,14 @@ function Card({ title, backgroundColor = "blue", textColor = "white", onClick, p
                 </div>
             </div>
             <div className="times">
-                <Button label="Daily" backgroundColor='transparent' color='var(--desaturatedBlue)' size="md" onClick={onClick} />
-                <Button label="Weekly" backgroundColor='transparent' size="md" onClick={onClick} />
-                <Button label="Monthly" backgroundColor='transparent' color='var(--desaturatedBlue)' size="md" onClick={onClick} />
+                {ButtonTitles.map((button, index) => (
+                    <Button
+                        key={index}
+                        onClick={() => buttonContext.setClickedId(index)}
+                        label={button}
+                        color={index === buttonContext.clickedId ? "white" : "var(--desaturatedBlue)"}
+                    />
+                ))}
             </div>
         </div>
     )
