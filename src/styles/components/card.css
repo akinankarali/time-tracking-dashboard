@@ -46,13 +46,14 @@
 @media only screen and (max-width: 575.98px) { 
     .card {
         margin-top: 25rem !important;
-        max-width: 28rem !important;
+        max-width: 22rem !important;
     }
     .user_info {
         display: flex;
     }
     .user_info__avatar {
         padding-right: 1rem;
+        padding-bottom: 0!important;
     }
     .user_info__name {
         display: flex;
@@ -70,6 +71,14 @@
     }
     .user_info__name span {
         padding-right: 1rem;
+    }
+    .user_info__name h2 {
+        font-size: 2rem!important;
+        width: 8rem!important;
+    }
+    .user_info__avatar img {
+        width: 72px!important;
+        height: 72px!important;
     }
 }
 

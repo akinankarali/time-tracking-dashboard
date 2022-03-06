@@ -19,7 +19,7 @@
 @media only screen and (max-width: 575.98px) { 
     .widget {
         padding-bottom: 2rem!important;
-        width: 28rem;
+        width: 22rem;
     }
     .widget .timeframes {
         display: flex;
